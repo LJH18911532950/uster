@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".fragment2.VpFragment1">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <TextView
+        android:id="@+id/c__1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="个人信息"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/c_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="性别"
+        app:layout_constraintTop_toBottomOf="@id/c__1"/>
+
+    <TextView
+        android:id="@+id/c_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="生日"
+        app:layout_constraintTop_toBottomOf="@id/c_1"/>
+
+    <TextView
+        android:id="@+id/c_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="所在地区"
+        app:layout_constraintTop_toBottomOf="@id/c_2"/>
+
+    <TextView
+        android:id="@+id/c__2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:text="技能标签"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/c_3"/>
+
+    <TextView
+        android:id="@+id/c_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="个人信息"
+        app:layout_constraintTop_toBottomOf="@id/c__2"/>
+
+
+    <TextView
+        android:id="@+id/count_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toRightOf="@id/c_1"
+        app:layout_constraintTop_toTopOf="@id/c_1" />
+
+    <TextView
+        android:id="@+id/count_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toRightOf="@id/c_2"
+        app:layout_constraintTop_toTopOf="@id/c_2"/>
+
+    <TextView
+        android:id="@+id/count_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toRightOf="@id/c_3"
+        app:layout_constraintTop_toTopOf="@id/c_3"/>
+
+    <TextView
+        android:id="@+id/count_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/c_4"
+        app:layout_constraintTop_toTopOf="@id/c_4"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:id="@+id/c_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/count_2"
+        app:layout_constraintTop_toTopOf="@id/count_2"
+        android:layout_marginLeft="10dp"
+        android:text="星座"/>
+    <TextView
+        android:id="@+id/count_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/c_5"
+        app:layout_constraintTop_toTopOf="@id/c_5"
+        android:layout_marginLeft="10dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

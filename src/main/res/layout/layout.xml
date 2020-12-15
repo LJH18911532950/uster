@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="15dp">
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/iv_img_1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_title"
+        app:layout_constraintLeft_toRightOf="@id/iv_img_1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_tuil_1"
+        app:layout_constraintLeft_toRightOf="@id/iv_img_1"
+        app:layout_constraintBottom_toBottomOf="@id/iv_img_1" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/tv_title"
+        app:layout_constraintLeft_toRightOf="@id/tv_title"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/lv10"/>
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="25dp"
+        android:id="@+id/btn_asd"
+        android:text="+关注"
+        android:textColor="#F60F0F"
+        android:background="@drawable/sliks"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp"/>
+    <com.ms.square.android.expandabletextview.ExpandableTextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/expand_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        expandableTextView:maxCollapsedLines="4"
+        expandableTextView:animDuration="200"
+        app:layout_constraintTop_toBottomOf="@id/iv_img_1">
+        <TextView
+            android:id="@id/expandable_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="16sp"
+            android:textColor="#090909" />
+        <ImageButton
+            android:id="@id/expand_collapse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_gravity="right|bottom"
+            android:background="@android:color/transparent"/>
+    </com.ms.square.android.expandabletextview.ExpandableTextView>
+
+    <com.jaeger.ninegridimageview.NineGridImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:imgGap="4dp"
+        app:showStyle="grid"
+        android:layout_margin="15dp"
+        android:id="@+id/niv"
+        app:layout_constraintTop_toBottomOf="@id/expand_text_view"
+        >
+
+    </com.jaeger.ninegridimageview.NineGridImageView>
+    <com.bm.library.PhotoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

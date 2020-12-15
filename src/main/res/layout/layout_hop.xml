@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_s1"/>
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@id/tv_s1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/List1">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:id="@+id/iv_images1"
+            android:scaleType="fitXY"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:layout_weight="1"
+            android:id="@+id/iv_images2"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:id="@+id/iv_images3" />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_sj"
+        app:layout_constraintTop_toBottomOf="@id/List1"/>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    app:layout_constraintTop_toBottomOf="@id/tv_sj"
+    android:background="#D6D1D1"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
